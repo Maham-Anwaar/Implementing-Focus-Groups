@@ -2,9 +2,11 @@
 
 ## Problem Statement
 
+**How can we manage the focus among a collection of buttons or interactive elements so that it behaves intuitively and accessibly for users?**
+
 In many user interfaces, we often encounter scenarios where there is a collection of buttons or interactive elements grouped together. One common challenge is controlling the focus among these elements, ensuring that users can navigate through them using keyboard inputs (e.g., arrow keys) effectively.
 
-The problem statement is: **How can we manage the focus among a collection of buttons or interactive elements so that it behaves intuitively and accessibly for users?**
+
 
 ## Solution
 
@@ -33,3 +35,12 @@ To implement this solution for our collection of buttons:
 4. **Changing Focus**: When the user presses the right or left arrow key, modify the `tabindex` values of the buttons accordingly. For example, if the current focused button has `tabindex="0"`, change it to `tabindex="-1"` and set the next button in the desired direction to `tabindex="0"`.
 
 By following this approach, we can effectively manage the focus among a collection of buttons, ensuring a smooth and accessible user experience. Users can navigate through the buttons using keyboard inputs, and the `tabindex` values help determine the order in which these buttons receive focus.
+
+### Demonstration
+
+<img width="617" alt="Screenshot 2023-12-04 at 12 21 14 PM" src="https://github.com/Maham-Anwaar/Implementing-Focus-Groups/assets/36509445/0054be0b-2ae1-45b4-a9fb-0398dbb8135d">
+
+
+
+
+
