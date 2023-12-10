@@ -73,9 +73,12 @@ export function CollectionItem<E extends ElementType>(
   const { as: Element = "div", ...restProps } = props;
 
   useEffect(() => {
+
+    restProps.setRef(itemRef.current)
+
     addElement(itemRef, restProps.data);
     return () => removeElement(itemRef);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   return <Element ref=
