@@ -74,7 +74,7 @@ export function CollectionItem<E extends ElementType>(
 
   useEffect(() => {
 
-    restProps.setRef(itemRef.current)
+    restProps?.setRef(itemRef.current)
 
     addElement(itemRef, restProps.data);
     return () => removeElement(itemRef);
