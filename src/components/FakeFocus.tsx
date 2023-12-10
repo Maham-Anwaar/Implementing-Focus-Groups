@@ -1,6 +1,5 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 import { Collection, CollectionItem } from "./Collection";
-import { ComponentProps } from "react";
 
 const FakeFocusContext = createContext(null);
 
